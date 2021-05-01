@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register page</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	
+	<style>
+		*{ box-sizing: border-box; }
+		body , html{margin: 0; height: 100%; overflow: hidden;}
+		#regist{
+			
+			background-image: url("resources/regist_bg.jpg");
+			height: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+  			
+		}
+		#left{
+			float: left;
+			font-family: 'Fjalla One', sans-serif;
+			z-index: 2;
+			font-size: 45px;
+			position: absolute;
+			top: 1%; left: 5%;
+			width: 50%;
+			color: #FFFAFA;
+		}
+		#right{
+			font-family: 'Fjalla One', sans-serif;
+			color: #FFFAFA;
+			border-style: outset;
+			z-index: 2;
+			position: absolute;
+			top: 7%; right: 1%;
+			font-size: 25px;
+			width: 45%;
+			border-radius: 12px;
+			padding-top:  15px;
+			padding: 30px;
+		
+
+		}
+		input {
+			font-family: 'Fjalla One', sans-serif;
+			width: 45%;
+			padding: 11px;
+			margin: 5px 10px 22px 0;
+			display: inline-block;
+			border: none;
+			background: #f1f1f1;
+			position: relative;
+			left: 2%;
+			border-radius: 10px;
+			font-size: 15px;
+
+		}
+		input[type=email]{
+			width: 92%;
+		}
+		label{
+			position: relative;
+			left: 2%;
+			margin-right: 15px; 
+		}
+
+			button {
+			  color: white;
+			  padding: 14px 20px;
+			  margin: 18px 20px;
+			  border: none;
+			  cursor: pointer;
+			  width: 40%;
+			  border-radius: 8px;
+			  background-color: #ffbf00;
+			  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			  font-size: 20px;
+			  font-weight: bold;
+			 position: relative;
+			 left: 25%;
+			}
+	</style>
+</head>
+
+<body>
+	<div id="regist"> </div>
+	<div id="left">
+		<h1>Join our community to be the first to know...</h1>
+		<h3>Filgoal is the biggest football news website in the world.</h3>
+
+	</div>
+	
+	<div style="clear: both;"></div>
+	
+	<div id="right">
+		
+	<form action="welcome.html" method="post">
+
+		<input type="text" name="fname" id="fnam" placeholder="Enter first name" required>
+
+		<input type="text" name="lnam" id="lnam" placeholder="Enter Last name" required><br>
+		
+		<input type="text" name="unam" id="unam" placeholder="Enter user name" required style="width: 92%;"><br>
+		
+		<input type="Password" name="pass" id="pass" placeholder="Enter Password" required>
+
+		
+		<input type="Password" name="repass" id="repass" placeholder="Enter Password" required>
+		
+		
+		<input type="email" name="email" id="email" placeholder="Enter email"><br>
+
+		<label for="bday" style="">Birthday:</label>
+		<input type="date" name="bday" id="bday"><br>
+
+		<label for="country">Country:</label>
+		<select id="country" style="margin: 10px; padding: 10px; width:76%">
+			<option value="">Select country</option>
+			<option value="eg">Egypt</option>
+			<option value="su">Sudi arabia</option>
+			<option value="en">England</option>
+			<option value="fr">France</option>
+			<option value="gr">German</option>
+			<option value="am">America</option>
+			<option value="br">Brazil</option>
+			
+		</select>
+		
+		<input type="tel" name="tel" id="tel" placeholder="Enter your phone" required style="width: 92%;"><br>
+
+		<button type="submit">Sign in</button><br>
+	</form>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+*{ box-sizing: border-box; font-family: 'Fjalla One', sans-serif;}
+	body , html{margin: 0; height: 100%;}
+
+	#bg{
+			background-color: #2a2c4d;
+			height: 100%;
+      overflow: scroll;
+      overflow-x: hidden;
+
+  			
+	}
+	.icon-bar {
+  width: 100%;
+  background-color: #01042b;
+  overflow: hidden;
+  position: fixed;
+  top:0;
+ z-index: 2;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+  color: #ffbf00;
+}
+
+.active {
+  background-color: #ffbf00;
+}
+#main {
+margin-top: 60px;
+height: 100%;
+width: 100%;
+
+
+}
+#newsDiv{
+  height: 350px;
+  float: left;  
+}
+
+
+.fit{
+  height: 100%;
+  width: 50%;
+  position: relative;
+  float: left;
+  padding: 1px;
+}
+.newsImg {
+
+  height: 100%;
+  width: 100%;
+
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+}
+#right:hover .overlay {
+  opacity: 1;
+}
+
+#left-left-but:hover .overlay{
+  opacity: 1;
+}
+#left-left-top:hover .overlay{
+  opacity: 1;
+}
+#left-right-but:hover .overlay{
+  opacity: 1;
+}
+#left-right-top:hover .overlay{
+  opacity: 1;
+}
+.container{
+  margin: auto;
+  width: 80%;
+  height: 70%;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  top: 5%;
+  margin-bottom: 30px;
+  clear: left;
+}
+.container img { vertical-align: middle; border-radius: 15px; overflow: hidden;}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+ #left-main{
+  top: 5%;
+  margin-left: 10px;
+  float: left;
+  width: 30%;
+  height: 80%;
+  position: relative;
+  clear: right;
+  
+  border-radius: 8px;
+ }
+  
+
+ #mid-main{
+  
+  float: left;
+  width: 65%;
+  height: 100%;
+  position: relative;
+  clear: right;
+ }

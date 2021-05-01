@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Page</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="refresh"
+        content="4; url = home.html" />
+
+	<style>
+		*{ box-sizing: border-box; }
+		body , html{margin: 0; height: 100%; overflow: hidden;}
+		#welcome{
+			
+			background-image: url("resources/regist_bg.jpg");
+			height: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+  			
+		}
+		#greet{
+			float: left;
+			font-family: 'Fjalla One', sans-serif;
+			z-index: 2;
+			font-size: 55px;
+			position: absolute;
+			top: 5%; left: 10%;
+			width: 80%;
+			color: #FF4500;
+			text-align: center;
+		 padding-bottom: 0; 
+
+		}
+		.loader{
+
+			  border: 16px solid #f3f3f3;
+			  border-radius: 50%;
+			  border-top: 16px solid #3498db;
+			  width: 120px;
+			  height: 120px;
+			  -webkit-animation: spin 2s linear infinite; /* Safari */
+			  animation: spin 1.5s linear infinite;
+			  z-index: 2;
+			  position: absolute;
+			  top: 65%; left: 45%;
+			}
+
+			@keyframes spin {
+			  0% { transform: rotate(0deg); }
+			  100% { transform: rotate(360deg); }
+			}
+		
+	</style>
+</head>
+<body>
+	<div id="welcome"></div>
+	<div id="greet">
+		<h1>Thank you for registration</h1>
+		<h3>Lets start our journy...</h3>
+
+	</div>
+
+	<div class="loader"></div>
+</body>
+</html>
